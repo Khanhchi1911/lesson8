@@ -1,0 +1,54 @@
+.bai4 {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+}
+.title {
+    color: blue;
+    display: flex;
+
+}
+.title1 {
+    background-color: blue;
+    color: aliceblue;
+}
+.home {
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    margin: 0 35% ;
+    box-shadow: 5px 5px 6px 2px rgba(0, 0, 0, 0.178);
+ 
+}
+input {
+    width: 50%;
+    padding: 20px 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+.signin {
+    width: 50%;
+    padding: 20px 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(72, 92, 209) ;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(60, 60, 255);
+    color: aliceblue;
+    border-radius: 50px;
+}
+.or {
+    width: 300px;
+    height: 60px;
+    padding: 20px 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0) ;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+}

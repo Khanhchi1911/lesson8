@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var taikhoan1 = {
+            email: "abcde@gmail.com",
+            phone: 01234567,
+            password: 12345,
+            username: "kchi"
+        }
+        var taikhoan2 = {
+            email: "abcde@gmail.com",
+            phone: 01234567,
+            password: 12345,
+            username: "kchi"
+        }
+        var taikhoan3 = {
+            email: "abcde@gmail.com",
+            phone: 01234567,
+            password: 12345,
+            username: "kchi"
+        }
+        var tkdn = [taikhoan1, taikhoan2, taikhoan3];
+        console.log(tkdn)
+        let tkdnString = JSON.stringify(tkdn)
+        console.log(tkdnString);
+        localStorage.setItem("tkdn",tkdnString)
+    </script>
+</body>
+</html>

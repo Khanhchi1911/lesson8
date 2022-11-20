@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai4.css">
+</head>
+<body>
+    <div class="bai4">
+        <div class="title">
+            <h1>Linked</h1>
+            <div class="title1">
+                <h1>in</h1>
+            </div>
+        </div>
+        
+        <div class="home">
+            <h1>Sign in</h1>
+            <p>Stay updated on your professional world</p>
+            <form action="" id="form-login">
+                <input type="text" id="email" placeholder="Email or Phone" required><br>
+                <input type="password" id="pass" placeholder="Password" required><br>
+            
+            <a href="">Forgot password?</a><br>
+            <button class="signin" onclick="page_redirect()">Sign in</button>
+           
+            <p style="color: grey;">or</p>
+            
+            <button class="or">Sign in with Google</button><br>
+            <button class="or">Sign in with Apple</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        var PASS = '12345';
+        var EMAIL = 'abcd@gmail.com';
+        var PHONE = '01234567'
+        
+        var inputEmail = document.getElementById('email');
+        var inputPassword = document.getElementById('pass');
+
+        var formLogin = document.getElementById('form-login');
+        if(formLogin.attachEvent) {
+            formLogin.attachEvent('submit', onFormSubmit);
+        } else {
+            formLogin.addEventListener('submit', onFormSubmit);
+        }
+
+        function onFormSubmit(e) {
+            var email = inputEmail.value;
+            var password = inputPassword.value;
+            
+            if(email == EMAIL/PHONE && password == PASS) {
+                window.location = "youtube.com";
+            } 
+            else {
+                alert('Đăng nhập không thành công!');
+            }
+            
+        }
+ 
+ 
+    </script>
+</body>
+</html>
